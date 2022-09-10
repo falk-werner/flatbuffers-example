@@ -1,0 +1,12 @@
+namespace fbs.todolist;
+
+table ToDo {
+    title: string;
+    description: string;
+}
+
+table ToDoList {
+    todos: [ToDo];
+}
+
+root_type ToDoList;
